@@ -1,0 +1,19 @@
+print('employee tax')
+print('************')
+name=input('employee name=')
+bs=int(input('basic salary='))
+da=int(input('daily allowance:'))
+ta=int(input('Travelling allowance:'))
+hra=int(input('House rental allowance:'))
+netsalary=bs+da+ta+hra
+print('Netsalary=',netsalary)
+if netsalary>100000:
+ tax=netsalary*10/100
+if 100000<netsalary>50000:
+ print('tax=7%')
+if 50000<netsalary>40000:
+ print('tax=4%')
+if 40000<netsalary>20000:
+ print('tax=2%')
+if netsalary<20000:
+ print('tax=0')
